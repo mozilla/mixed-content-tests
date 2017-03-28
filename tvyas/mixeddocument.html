@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function createDoc()
+  {
+  var doc=document.open("text/html","replace");
+
+  doc.write("<!DOCTYPE html><html><body>Do you see an alert?<script src='http://mozilla.github.io/mixed-content-tests/tvyas/script2.js'>\<\/script\>\<br\/\>What happens if a user clicks \<a href='https://people.mozilla.com/tvyas/mixedcontent.html'\>this link\<\/a\>, does the disable protection decision persist?\<\/body>\<\/html>");
+
+  doc.close();
+  }
+</script>
+<script src = 'http://mozilla.github.io/mixed-content-tests/tvyas/script1.js'></script>
+</head>
+
+<body>
+<input type="button" value="New document" onclick="createDoc()">
+</body>
+</html> 

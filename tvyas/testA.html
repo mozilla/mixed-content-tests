@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<!--
+Tests for Mixed Content Blocker User Override
+https://bugzilla.mozilla.org/show_bug.cgi?id=822367
+-->
+<head>
+  <meta charset="utf-8">
+  <title>Tests for Bug 822367</title>
+</head>
+<body>
+<div id="testContent"></div>
+<p id="para"></p>
+<script src = "http://mozilla.github.io/mixed-content-tests/tvyas/file_mixed_content_override.js"></script>
+<script>
+/*var x = document.createElement('p');
+x.setAttribute("id", "x");
+var link = document.createElement('a');
+link.setAttribute('id', 'foo');
+document.getElementById('testContent').appendChild(x);
+document.getElementById('testContent').appendChild(link);
+var y = document.getElementById('para');
+y.innerHTML= "hello";*/
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,20 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test 5 for Bug 822367</title>
+  <script>
+    function createDoc()
+    {
+alert(0);
+      var doc=document.open("text/html","replace");
+      doc.write("<!DOCTYPE html><html><body><p id='p1'>hello</p><script src='http://mozilla.github.io/mixed-content-tests/tvyas/script.js'>\<\/script\>\<\/body>\<\/html>");
+      doc.close();
+    }
+  </script>
+</head>
+<body>
+  <div id="testContent">
+<img src="https://mozilla.github.io/mixed-content-tests/PeopleOfMozilla.jpg" onload="createDoc()">
+  </div>
+</body>
+</html>
