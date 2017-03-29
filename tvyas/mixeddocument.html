@@ -6,7 +6,7 @@ function createDoc()
   {
   var doc=document.open("text/html","replace");
 
-  doc.write("<!DOCTYPE html><html><body>Do you see an alert?<script src='http://mixed-content-tests.mozqa.com/tvyas/script2.js'>\<\/script\>\<br\/\>What happens if a user clicks \<a href='https://people.mozilla.com/tvyas/mixedcontent.html'\>this link\<\/a\>, does the disable protection decision persist?\<\/body>\<\/html>");
+  doc.write("<!DOCTYPE html><html><body>Do you see an alert?<script src='http://mixed-content-tests.mozqa.com/tvyas/script2.js'>\<\/script\>\<br\/\>What happens if a user clicks \<a href='https://mixed-content-tests.mozqa.com/tvyas/mixedcontent.html'\>this link\<\/a\>, does the disable protection decision persist?\<\/body>\<\/html>");
 
   doc.close();
   }
