@@ -7,14 +7,14 @@
     {
 alert(0);
       var doc=document.open("text/html","replace");
-      doc.write("<!DOCTYPE html><html><body><p id='p1'>hello</p><script src='http://mozilla.github.io/mixed-content-tests/tvyas/script.js'>\<\/script\>\<\/body>\<\/html>");
+      doc.write("<!DOCTYPE html><html><body><p id='p1'>hello</p><script src='http://mixed-content-tests.mozqa.com/tvyas/script.js'>\<\/script\>\<\/body>\<\/html>");
       doc.close();
     }
   </script>
 </head>
 <body>
   <div id="testContent">
-<img src="https://mozilla.github.io/mixed-content-tests/PeopleOfMozilla.jpg" onload="createDoc()">
+<img src="https://mixed-content-tests.mozqa.com/PeopleOfMozilla.jpg" onload="createDoc()">
   </div>
 </body>
 </html>

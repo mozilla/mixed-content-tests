@@ -23,7 +23,7 @@ iframe {
 }
 </style>
 <!--
-<link rel="stylesheet" type="text/css" href="http://mozilla.github.io/mixed-content-tests/bsterne/tests/62178/static/style/style.css" />
+<link rel="stylesheet" type="text/css" href="http://mixed-content-tests.mozqa.com/bsterne/tests/62178/static/style/style.css" />
 -->
 </head>
 <body onload="runTests();">
@@ -41,7 +41,7 @@ iframe {
 
 <div class="test">
   Secure iframe:
-  <iframe id="frame" src="https://mozilla.github.io/mixed-content-tests/bsterne/tests/62178/static/content/iframe.html"></iframe>
+  <iframe id="frame" src="https://mixed-content-tests.mozqa.com/bsterne/tests/62178/static/content/iframe.html"></iframe>
 </div>
 
 <!--
@@ -64,7 +64,7 @@ iframe {
 </div>
 
 <div>
-  <p>This is a <a href="https://mozilla.github.io/mixed-content-tests/bsterne">link</a>.</p>
+  <p>This is a <a href="https://mixed-content-tests.mozqa.com/bsterne">link</a>.</p>
 </div>
 
 -->
@@ -79,7 +79,7 @@ function log(s) {
 
 window.addEventListener("message", function(event) {
   log("Received message from " + event.origin + ": " + event.data);
-  if (event.origin != "http://mozilla.github.io/mixed-content-tests")
+  if (event.origin != "http://mixed-content-tests.mozqa.com")
     return;
      
   // look for message from our <object>
@@ -99,7 +99,7 @@ function runTests() {
   window.setTimeout(function() {
     log("Attemping to load insecure script 1.");
     var s = document.createElement("script");
-    s.src = "http://mozilla.github.io/mixed-content-tests/bsterne/tests/62178/static/script/script1.js";
+    s.src = "http://mixed-content-tests.mozqa.com/bsterne/tests/62178/static/script/script1.js";
     document.body.appendChild(s);
   }, 1000);
 
@@ -108,7 +108,7 @@ function runTests() {
   window.setTimeout(function() {
     log("Attemping to load insecure script 2.");
     var s = document.createElement("script");
-    s.src = "http://mozilla.github.io/mixed-content-tests/bsterne/tests/62178/static/script/script2.js";
+    s.src = "http://mixed-content-tests.mozqa.com/bsterne/tests/62178/static/script/script2.js";
     document.body.appendChild(s);
   }, 2000);
 
@@ -117,7 +117,7 @@ function runTests() {
   log("Attempting to load insecure <object> element");
   var o = document.createElement("object");
   o.type = "text/html";
-  o.data = "http://mozilla.github.io/mixed-content-tests/bsterne/tests/62178/static/script/object.html";
+  o.data = "http://mixed-content-tests.mozqa.com/bsterne/tests/62178/static/script/object.html";
   document.getElementById("result3").appendChild(o);
   
   // Test 4:
