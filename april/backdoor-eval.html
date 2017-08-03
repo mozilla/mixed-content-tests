@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy"
+      content="script-src https://mixed-content-tests-mozilla.org/april/backdoor-eval-loader.js 'unsafe-eval'">
+    <title>Sneaking in script execution via eval()</title>
+  </head>
+  <body>
+    Script execution via eval()
+    <script src="backdoor-eval-loader.js"></script>
+  </body>
+</html>
