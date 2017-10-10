@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Testing mixed content </title>
+</head>
+<body>
+  <p>
+  Image:<br/>
+  <img srcset="http://mixed-content-tests-mozilla.org/tvyas/images/320.png 320w,
+               http://mixed-content-tests-mozilla.org/tvyas/images/480.png 480w,
+               http://mixed-content-tests-mozilla.org/tvyas/images/640.png 640w"
+       sizes="(max-width: 320px) 280px,
+              (max-width: 480px) 440px,
+              640px"
+       src="http://mixed-content-tests-mozilla.org/tvyas/images/640.png " alt="image srcset">
+  </p>
+  <p>
+  Picture:<br/>
+  <picture>
+    <source media="(max-width: 479px)" srcset="http://mixed-content-tests-mozilla.org/tvyas/images/320.png">
+    <source media="(max-width: 639px)" srcset="http://mixed-content-tests-mozilla.org/tvyas/images/480.png">
+    <img src="http://mixed-content-tests-mozilla.org/tvyas/images/640.png" alt="picture srcset">
+  </picture>
+  </p>
+</body>
+</html>
+
