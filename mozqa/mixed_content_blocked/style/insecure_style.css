@@ -1,0 +1,8 @@
+#stylesheet {
+  border-color: red;
+  color: red;
+}
+
+#result4::before {
+  content: "LOADED";
+}
